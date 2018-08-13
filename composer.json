@@ -1,0 +1,35 @@
+{
+  "name": "cloudlinkadi/textmagic-laravel",
+  "type": "package",
+  "description": "A Laravel wrapper for Textmagic API",
+  "keywords": ["textmagic", "sms", "api","laravel-package"],
+  "homepage": "https://github.com/CloudLinkADI/TextMagic-Laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sunny Kashyap",
+      "email": "kashyap.sunny679@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.2.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "CloudLinkADI\\TextMagic\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CloudLinkADI\\TextMagic\\TextMagicServiceProvider"
+      ],
+      "aliases": {
+        "TextMagic": "CloudLinkADI\\TextMagic\\TextMagicFacade"
+      }
+    }
+  }
+}
