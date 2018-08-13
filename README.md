@@ -25,11 +25,11 @@ catch (\Exception $e) {
 echo $result['id'];
 ```
 
-#Installation
+## Installation
 You can install the package via composer:
 
 ```
-composer require beyondcode/laravel-self-diagnosis
+composer require cloudlinkadi/textmagic-laravel
 ```
 
 After you have installed package, open your Laravel config file config/app.php and add the following lines.
