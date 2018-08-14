@@ -51,7 +51,7 @@ Add the facade of this package to the $aliases array.
 Now the Image Class will be auto-loaded by Laravel.
 
 **For Laravel version > 5.5**<br/>
-If you're using Laravel 5.5+ the ServiceProvider & TextMagic will be automatically registered for you.
+If you're using Laravel 5.5+ the TextMagicServiceProvider & TextMagic Facade will be automatically registered for you.
 
 
 
