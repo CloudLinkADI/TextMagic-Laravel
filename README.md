@@ -4,7 +4,8 @@ The TextMagic SMS API PHP wrapper can save you a lot of time, as it includes all
 ## Requirements
 The PHP wrapper has the following requirements:
 
-* PHP 5.2.1 or higher
+* PHP 5.5.9 or higher
+* Laravel 5 or higher
 * phpunit 4.5 or higher
 
 
