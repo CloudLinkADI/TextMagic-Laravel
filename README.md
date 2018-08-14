@@ -1,7 +1,7 @@
 # TextMagic-Laravel
 The TextMagic SMS API PHP wrapper can save you a lot of time, as it includes all the necessary API commands and tests. It only takes a few seconds to download it from GitHub and to install it into your own app or software. After installation, you’ll then be able to send text messages.
 
-##Requirements
+## Requirements
 The PHP wrapper has the following requirements:
 
 * PHP 5.2.1 or higher
@@ -51,7 +51,7 @@ Add the facade of this package to the $aliases array.
 Now the Image Class will be auto-loaded by Laravel.
 
 **For Laravel version > 5.5**<br/>
-If you're using Laravel 5.5+ the SelfDiagnosisServiceProvider will be automatically registered for you.
+If you're using Laravel 5.5+ the ServiceProvider & TextMagic will be automatically registered for you.
 
 
 
