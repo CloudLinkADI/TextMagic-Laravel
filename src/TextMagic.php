@@ -4,9 +4,17 @@ namespace CloudLinkADI\TextMagic;
 
 use Textmagic\Services\TextmagicRestClient;
 
+
 class TextMagic extends TextmagicRestClient
 {
-
+    /**
+     * TextMagic constructor.
+     * @param $username
+     * @param $token
+     * @param null $version
+     * @param null $http
+     * @throws \ErrorException
+     */
     public function __construct(
         $username,
         $token,
@@ -24,7 +32,7 @@ class TextMagic extends TextmagicRestClient
     public function __get($name) {
         $name = strtolower($name);
         if (!isset($this->$name)) {
-            $className = __NAMESPACE__ . '\\Models\\' . ucfirst($name);
+            $className = '\\Textmagic\\Services\\Models\\' . ucfirst($name);
 
             if(class_exists($className))
                 $this->$name = new $className($this);
@@ -125,12 +133,18 @@ class TextMagic extends TextmagicRestClient
         $this->stats->messaging($params);
     }
 
-    /**
-     * @return array
-     * @throws \CloudLinkADI\TextMagic\TextMagicException
-     * @throws \ErrorException
-     */
+
     public function ping() {
         return $this->utils->ping();
+    }
+
+    public function getUser()
+    {
+        return $this->retrieveData('user');
+    }
+
+    public function updateUser($params = array())
+    {
+        return $this->retrieveData('user',$params);
     }
 }
