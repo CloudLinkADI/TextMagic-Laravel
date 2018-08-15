@@ -1,12 +1,19 @@
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
+
 # TextMagic-Laravel
 The TextMagic SMS API PHP wrapper can save you a lot of time, as it includes all the necessary API commands and tests. It only takes a few seconds to download it from GitHub and to install it into your own app or software. After installation, you’ll then be able to send text messages.
 
 ## Requirements
 The PHP wrapper has the following requirements:
 
-* PHP 5.5.9 or higher
-* Laravel 5 or higher
-* phpunit 4.5 or higher
+* PHP >=7.0.0
+* Laravel >=5.5
+* phpunit ~6.0
 
 
 ## Send an SMS using TextMagic Facade (Code Example)
@@ -51,8 +58,7 @@ Add the facade of this package to the $aliases array.
 
 Now the Image Class will be auto-loaded by Laravel.
 
-**For Laravel version > 5.5**<br/>
-If you're using Laravel 5.5+ the TextMagicServiceProvider & TextMagic Facade will be automatically registered for you.
+As you're using Laravel 5.5+ the TextMagicServiceProvider & TextMagic Facade will be automatically registered for you.
 
 
 
