@@ -16,8 +16,8 @@ class TextMagic extends TextmagicRestClient
      * @throws \ErrorException
      */
     public function __construct(
-        $username,
-        $token,
+        $username = config('textmagic.username'),
+        $token = config('textmagic.token'),
         $version = null,
         $http = null
     ) {
