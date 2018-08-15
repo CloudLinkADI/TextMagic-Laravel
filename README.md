@@ -1,8 +1,8 @@
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+[![Total Downloads](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/downloads)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
+[![Latest Stable Version](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/v/stable)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
+[![License](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/license)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
 </p>
 
 # TextMagic-Laravel
