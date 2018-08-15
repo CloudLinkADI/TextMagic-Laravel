@@ -1,11 +1,16 @@
 {
   "name": "cloudlinkadi/textmagic-laravel",
   "type": "package",
-  "description": "A Laravel wrapper for Textmagic API",
-  "keywords": ["textmagic", "sms", "api","laravel-package"],
+  "description": "A Laravel wrapper for the TextMagic PHP SMS API.",
+  "keywords": ["textmagic", "sms", "api","laravel-package, cloudlink"],
   "homepage": "https://github.com/CloudLinkADI/TextMagic-Laravel",
   "license": "MIT",
   "authors": [
+    {
+      "name": "Andrew Coghlan",
+      "email": "info@cloud.link",
+      "homepage": "http://cloud.link"
+    },
     {
       "name": "Sunny Kashyap",
       "email": "kashyap.sunny679@gmail.com"
