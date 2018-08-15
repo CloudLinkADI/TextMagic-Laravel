@@ -16,11 +16,17 @@ class TextMagic extends TextmagicRestClient
      * @throws \ErrorException
      */
     public function __construct(
-        $username = config('textmagic.username'),
-        $token = config('textmagic.token'),
+        $username = null,
+        $token = null,
         $version = null,
         $http = null
     ) {
+        if(is_null($username)) {
+            $username = config('textmagic.username');
+        }
+        if(is_null($token)) {
+            $token = config('textmagic.token');
+        }
         parent::__construct($username,$token,$version,$http);
     }
     /**
