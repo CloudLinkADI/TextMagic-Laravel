@@ -52,7 +52,8 @@ $ php artisan vendor:publish --provider="CloudLinkADI\TextMagic\TextMagicService
 
 Set the config values for username and api-key either by editing the config file, or by setting the TEXTMAGIC_USERNAME and TEXTMAGIC_API_KEY variables in your .env file.
 
-## Usage Instructions (Code Example)
+## Usage Instructions
+### Code Example
 
 ```php
 $client = new TextMagic();
