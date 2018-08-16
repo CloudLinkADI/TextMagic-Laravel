@@ -15,17 +15,18 @@ namespace CloudLinkADI\TextMagic\Services\Models;
  * @author Andrew Coghlan
  */
 
-class Lookups extends \Textmagic\Services\Models\BaseModel {
+class Lookups extends \Textmagic\Services\Models\BaseModel
+{
 
     protected $resourceName = 'lookups';
 
-    protected $allowMethods = array('lookup');
+    protected $allowMethods = ['lookup'];
 
-    public function lookup($number) {
+    public function lookup($number)
+    {
         
         $this->checkPermissions('lookup');
 
-        return $this->client->retrieveData($this->resourceName . '/' . $number, []);
+        return $this->client->retrieveData($this->resourceName.'/'.$number, []);
     }
-
 }
