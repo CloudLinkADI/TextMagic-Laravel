@@ -1,6 +1,7 @@
 <?php
 
 namespace CloudLinkADI\TextMagic;
+
 use Illuminate\Support\ServiceProvider;
 
 class TextMagicServiceProvider extends ServiceProvider
