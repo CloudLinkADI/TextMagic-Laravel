@@ -20,8 +20,8 @@ You can install the package via composer:
 composer require cloudlinkadi/textmagic-laravel
 ```
 
-###Registering the Application
-####Laravel < 5.5
+## Registering the Application
+**Laravel < 5.5**</br>
 After you have installed package, open your Laravel config file config/app.php and add the following lines.
 
 In the $providers array add the service providers for this package.
@@ -37,15 +37,13 @@ Add the facade of this package to the $aliases array.
 'TextMagic' => CloudLinkADI\TextMagic\TextMagic::class
 ```
 
-####Laravel >= 5.5
+**Laravel >= 5.5**</br>
 No need to add the classes are they are automatically registed
 
 
 As you're using Laravel 5.5+ the TextMagicServiceProvider & TextMagic Facade will be automatically registered for you.
 
-
-
-###Configuration
+## Configuration
 Run artisan vendor:publish command to publish the config file 
  
 ```
