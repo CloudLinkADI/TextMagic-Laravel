@@ -61,7 +61,7 @@ As you're using Laravel 5.5+ the TextMagicServiceProvider & TextMagic Facade wil
 Run artisan vendor:publish command to publish the config file 
  
 ```
-$ php artisan vendor:publish --tag=config
+$ php artisan vendor:publish --provider="CloudLinkADI\TextMagic\TextMagicServiceProvider" --tag="config"
 ```
 
 ## API Reference
