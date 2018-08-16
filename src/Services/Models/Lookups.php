@@ -19,7 +19,7 @@ class Lookups extends \Textmagic\Services\Models\BaseModel {
 
     protected $resourceName = 'lookups';
 
-    protected $allowMethods = array('getList', 'create', 'get', 'delete', 'search', 'lookup');
+    protected $allowMethods = array('lookup');
 
     public function lookup($number) {
         

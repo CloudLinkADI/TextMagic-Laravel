@@ -1,7 +1,4 @@
-[![Total Downloads](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/downloads)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
-[![Latest Stable Version](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/v/stable)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
-[![License](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/license)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
-
+default
 
 # TextMagic-Laravel
 The TextMagic SMS API PHP wrapper can save you a lot of time, as it includes all the necessary API commands and tests. It only takes a few seconds to download it from GitHub and to install it into your own app or software. After installation, you’ll then be able to send text messages.
