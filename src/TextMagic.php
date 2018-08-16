@@ -99,6 +99,7 @@ class TextMagic extends TextmagicRestClient
             $methodName = implode('', $method);
             if (starts_with($name, $method[0]) && ends_with($name, $method[1]) && $methodName != $name) {
                 $modelName = trim(str_replace($method, ['', ''], $name));
+
                 return $this->$modelName->$methodName($arguments[0]);
             }
         }
@@ -112,7 +113,7 @@ class TextMagic extends TextmagicRestClient
 
             return $this->$modelName->create($arguments[0]);
         } elseif (starts_with($name, 'update') && ends_with($name, 'Contacts')) {
-            $modelName = trim(str_replace(['update','Contacts'], ['', ''], $name));
+            $modelName = trim(str_replace(['update', 'Contacts'], ['', ''], $name));
 
             return $this->$modelName->updateContacts($arguments[0], $arguments[1]);
         } elseif (starts_with($name, 'update') && ends_with($name, 'Contact')) {
@@ -120,15 +121,15 @@ class TextMagic extends TextmagicRestClient
 
             return $this->$modelName->updateContact($arguments[0], $arguments[1]);
         } elseif (starts_with($name, 'update')) {
-            $modelName = trim(str_replace('update','', $name));
+            $modelName = trim(str_replace('update', '', $name));
 
             return $this->$modelName->update($arguments[0], $arguments[1]);
         } elseif (starts_with($name, 'delete')) {
-            $modelName = trim(str_replace('delete','', $name));
+            $modelName = trim(str_replace('delete', '', $name));
 
             return $this->$modelName->delete($arguments[0]);
         } elseif (starts_with($name, 'search')) {
-            $modelName = trim(str_replace('search','', $name));
+            $modelName = trim(str_replace('search', '', $name));
 
             return $this->$modelName->delete($arguments[0]);
         }
