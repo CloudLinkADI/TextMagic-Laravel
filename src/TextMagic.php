@@ -37,8 +37,23 @@ class TextMagic extends TextmagicRestClient
      */
     public function __get($name) {
         $name = strtolower($name);
+        
+        // Try the standard Textmagic service models
         if (!isset($this->$name)) {
             $className = '\\Textmagic\\Services\\Models\\' . ucfirst($name);
+
+            if(class_exists($className))
+                $this->$name = new $className($this);
+            else{
+                $className .= 's';
+                if(class_exists($className))
+                    $this->$name = new $className($this);
+            }
+        }
+
+        // Now try the CloudLink service models
+        if (!isset($this->$name)) {
+            $className = '\\CloudLinkADI\\TextMagic\\Services\\Models\\' . ucfirst($name);
 
             if(class_exists($className))
                 $this->$name = new $className($this);
@@ -71,6 +86,7 @@ class TextMagic extends TextmagicRestClient
             ['get','Price'],
             ['get','Available'],
             ['get','Messages'],
+            ['get','Lookups'],
             ['create','Contacts'],
             ['create','Contact'],
             ['delete','Contacts'],
@@ -128,7 +144,7 @@ class TextMagic extends TextmagicRestClient
     /**
      * Functions that they are overwritten in Models
      */
-
+    
     public function spendingStats($params = array())
     {
         $this->stats->spending($params);
@@ -154,3 +170,6 @@ class TextMagic extends TextmagicRestClient
         return $this->retrieveData('user',$params);
     }
 }
+
+
+
