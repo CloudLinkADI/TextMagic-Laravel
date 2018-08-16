@@ -1,6 +1,8 @@
 [![Latest Stable Version](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/v/stable)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
 [![Total Downloads](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/downloads)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
 [![License](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/license)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
+[![StyleCI](https://github.styleci.io/repos/7548986/shield)](https://github.styleci.io/repos/7548986/shield)
+
 
 
 # TextMagic-Laravel
