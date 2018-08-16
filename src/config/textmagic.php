@@ -1,5 +1,6 @@
 <?php
-return array(
+
+return [
     /*
     |--------------------------------------------------------------------------
     | Textmagic Configuration
@@ -22,4 +23,4 @@ return array(
 
     'username' => env('TEXTMAGIC_USERNAME'),
     'token' => env('TEXTMAGIC_API_KEY'),
-);
+];

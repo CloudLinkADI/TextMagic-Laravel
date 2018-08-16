@@ -10,19 +10,11 @@
       "name": "Andrew Coghlan",
       "email": "info@cloud.link",
       "homepage": "http://cloud.link"
-    },
-    {
-      "name": "Sunny Kashyap",
-      "email": "kashyap.sunny679@gmail.com"
     }
   ],
   "require": {
-    "php": ">=5.5.9",
-    "laravel/framework": "5.*",
+    "laravel/framework": ">=5.0",
     "textmagic/sdk":"*"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "4.5.*"
   },
   "autoload": {
     "psr-4": {

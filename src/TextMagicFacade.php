@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Facade;
  */
 class TextMagicFacade extends Facade
 {
-
     /**
      * Get the registered name of the component.
      *

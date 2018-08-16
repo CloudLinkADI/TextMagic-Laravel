@@ -5,7 +5,6 @@ use Illuminate\Support\ServiceProvider;
 
 class TextMagicServiceProvider extends ServiceProvider
 {
-
     /**
      * Register the service provider.
      *
@@ -13,11 +12,10 @@ class TextMagicServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
         $this->app->singleton('TextMagic', function ($app) {
             return new TextMagic(
-                config('textmagic.username',''),
-                config('textmagic.token','')
+                config('textmagic.username', ''),
+                config('textmagic.token', '')
             );
         });
 
@@ -31,16 +29,13 @@ class TextMagicServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['TextMagic',TextMagic::class];
+        return ['TextMagic', TextMagic::class];
     }
 
     public function boot()
     {
-
         $this->publishes([
-            __DIR__.'/config/textmagic.php' => config_path('/textmagic.php'),
-        ],'config');
-
+            __DIR__ . '/config/textmagic.php' => config_path('/textmagic.php'),
+        ], 'config');
     }
-
 }

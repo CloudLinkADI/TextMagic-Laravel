@@ -4,7 +4,6 @@ namespace CloudLinkADI\TextMagic;
 
 use Textmagic\Services\TextmagicRestClient;
 
-
 class TextMagic extends TextmagicRestClient
 {
     /**
@@ -21,46 +20,50 @@ class TextMagic extends TextmagicRestClient
         $version = null,
         $http = null
     ) {
-        if(is_null($username)) {
+        if (is_null($username)) {
             $username = config('textmagic.username');
         }
-        if(is_null($token)) {
+        if (is_null($token)) {
             $token = config('textmagic.token');
         }
-        parent::__construct($username,$token,$version,$http);
+        parent::__construct($username, $token, $version, $http);
     }
+
     /**
-     * Overload method for access to models
+     * Overload method for access to models.
      *
      * @param string $name Model name
      * @return object
      */
-    public function __get($name) {
+    public function __get($name)
+    {
         $name = strtolower($name);
-        
+
         // Try the standard Textmagic service models
-        if (!isset($this->$name)) {
+        if (! isset($this->$name)) {
             $className = '\\Textmagic\\Services\\Models\\' . ucfirst($name);
 
-            if(class_exists($className))
+            if (class_exists($className)) {
                 $this->$name = new $className($this);
-            else{
+            } else {
                 $className .= 's';
-                if(class_exists($className))
+                if (class_exists($className)) {
                     $this->$name = new $className($this);
+                }
             }
         }
 
         // Now try the CloudLink service models
-        if (!isset($this->$name)) {
-            $className = '\\CloudLinkADI\\TextMagic\\Services\\Models\\' . ucfirst($name);
+        if (! isset($this->$name)) {
+            $className = '\\CloudLinkADI\\TextMagic\\Services\\Models\\'.ucfirst($name);
 
-            if(class_exists($className))
+            if (class_exists($className)) {
                 $this->$name = new $className($this);
-            else{
+            } else {
                 $className .= 's';
-                if(class_exists($className))
+                if (class_exists($className)) {
                     $this->$name = new $className($this);
+                }
             }
         }
 
@@ -68,7 +71,7 @@ class TextMagic extends TextmagicRestClient
     }
 
     /**
-     * Overload method for access to models functions
+     * Overload method for access to models functions.
      *
      * @param string $name Model name
      * @return object
@@ -79,31 +82,28 @@ class TextMagic extends TextmagicRestClient
         $arguments[0] = isset($arguments[0]) ? $arguments[0] : null;
 
         $SingleArgumentMethods = [
-            ['get','Lists'],
-            ['get','List'],
-            ['get','Contacts'],
-            ['get','Contact'],
-            ['get','Price'],
-            ['get','Available'],
-            ['get','Messages'],
-            ['get','Lookups'],
-            ['create','Contacts'],
-            ['create','Contact'],
-            ['delete','Contacts'],
-            ['delete','Contact'],
+            ['get', 'Lists'],
+            ['get', 'List'],
+            ['get', 'Contacts'],
+            ['get', 'Contact'],
+            ['get', 'Price'],
+            ['get', 'Available'],
+            ['get', 'Messages'],
+            ['get', 'Lookups'],
+            ['create', 'Contacts'],
+            ['create', 'Contact'],
+            ['delete', 'Contacts'],
+            ['delete', 'Contact'],
         ];
-        foreach ($SingleArgumentMethods as $method)
-        {
+        foreach ($SingleArgumentMethods as $method) {
             $methodName = implode('',$method);
-            if(starts_with($name,$method[0]) && ends_with($name,$method[1]) && $methodName != $name)
-            {
-                $modelName = trim(str_replace($method,['',''],$name));
+            if (starts_with($name, $method[0]) && ends_with($name, $method[1]) && $methodName != $name) {
+                $modelName = trim(str_replace($method, ['',''], $name));
                 return $this->$modelName->$methodName($arguments[0]);
             }
         }
 
-        if(starts_with($name,'get'))
-        {
+        if (starts_with($name,'get')) {
             $modelName = trim(str_replace('get','',$name));
             return $this->$modelName->get($arguments[0]);
         }
