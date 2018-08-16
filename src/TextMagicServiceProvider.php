@@ -36,7 +36,7 @@ class TextMagicServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/config/textmagic.php' => config_path('/textmagic.php'),
+            __DIR__.'/config/textmagic.php' => config_path('/textmagic.php'),
         ], 'config');
     }
 }

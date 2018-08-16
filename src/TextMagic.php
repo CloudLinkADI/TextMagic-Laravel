@@ -105,24 +105,31 @@ class TextMagic extends TextmagicRestClient
 
         if (starts_with($name, 'get')) {
             $modelName = trim(str_replace('get', '', $name));
+
             return $this->$modelName->get($arguments[0]);
         } elseif (starts_with($name, 'create')) {
-            $modelName = trim(str_replace('create','',$name));
+            $modelName = trim(str_replace('create', '', $name));
+
             return $this->$modelName->create($arguments[0]);
-        } elseif(starts_with($name, 'update') && ends_with($name, 'Contacts')) {
+        } elseif (starts_with($name, 'update') && ends_with($name, 'Contacts')) {
             $modelName = trim(str_replace(['update','Contacts'], ['', ''], $name));
+
             return $this->$modelName->updateContacts($arguments[0], $arguments[1]);
-        } elseif(starts_with($name, 'update') && ends_with($name, 'Contact')) {
+        } elseif (starts_with($name, 'update') && ends_with($name, 'Contact')) {
             $modelName = trim(str_replace(['update', 'Contact'], ['', ''], $name));
+
             return $this->$modelName->updateContact($arguments[0], $arguments[1]);
-        } elseif(starts_with($name, 'update')) {
-            $modelName = trim(str_replace('update','',$name));
+        } elseif (starts_with($name, 'update')) {
+            $modelName = trim(str_replace('update','', $name));
+
             return $this->$modelName->update($arguments[0], $arguments[1]);
-        } elseif(starts_with($name, 'delete')) {
-            $modelName = trim(str_replace('delete','',$name));
+        } elseif (starts_with($name, 'delete')) {
+            $modelName = trim(str_replace('delete','', $name));
+
             return $this->$modelName->delete($arguments[0]);
-        } elseif(starts_with($name, 'search')) {
-            $modelName = trim(str_replace('search','',$name));
+        } elseif (starts_with($name, 'search')) {
+            $modelName = trim(str_replace('search','', $name));
+
             return $this->$modelName->delete($arguments[0]);
         }
 
