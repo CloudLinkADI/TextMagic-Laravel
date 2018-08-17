@@ -30,7 +30,7 @@ The PHP wrapper has the following requirements:
 You can install the package via composer:
 
 ```
-composer require cloudlink/textmagic-laravel
+composer require cloudlink/textmagic-laravel:^1.0
 ```
 
 ## Registering the Application
