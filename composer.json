@@ -1,5 +1,5 @@
 {
-  "name": "cloudlinkadi/textmagic-laravel",
+  "name": "cloudlink/textmagic-laravel",
   "type": "package",
   "description": "A Laravel wrapper for the TextMagic PHP SMS API.",
   "keywords": ["textmagic", "sms", "api","laravel-package", "cloudlink"],
