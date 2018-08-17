@@ -24,10 +24,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "CloudLinkADI\\TextMagic\\TextMagicServiceProvider"
+        "CloudLink\\TextMagic\\TextMagicServiceProvider"
       ],
       "aliases": {
-        "TextMagic": "CloudLinkADI\\TextMagic\\TextMagicFacade"
+        "TextMagic": "CloudLink\\TextMagic\\TextMagicFacade"
       }
     }
   }
