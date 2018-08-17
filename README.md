@@ -1,8 +1,21 @@
-[![Latest Stable Version](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/v/stable)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
-[![Total Downloads](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/downloads)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
-[![License](https://poser.pugx.org/cloudlinkadi/textmagic-laravel/license)](https://packagist.org/packages/cloudlinkadi/textmagic-laravel)
-[![StyleCI](https://github.styleci.io/repos/7548986/shield)](https://github.styleci.io/repos/7548986/shield)
+<p align="center"><img src="https://cdn.cloud.link/img/cl-logo.png" alt="CloudLink" width="361.6" height="64"></p>
 
+<p align="center">
+  
+<a href="https://packagist.org/packages/cloudlinkadi/textmagic-laravel">
+  <img alt="Latest Stable Version" src="https://poser.pugx.org/cloudlinkadi/textmagic-laravel/v/stable">
+</a>
+<a href="https://packagist.org/packages/cloudlinkadi/textmagic-laravel">
+  <img alt="Total Downloads" src="https://poser.pugx.org/cloudlinkadi/textmagic-laravel/downloads">
+</a>
+<a href="https://packagist.org/packages/cloudlinkadi/textmagic-laravel">
+  <img alt="License" src="https://poser.pugx.org/cloudlinkadi/textmagic-laravel/license">
+</a>
+<a href="https://github.styleci.io/repos/7548986/shield">
+  <img style="max-width:100%;" alt="StyleCI" src="https://github.styleci.io/repos/7548986/shield">
+</a>
+
+</p>
 
 
 # TextMagic-Laravel
