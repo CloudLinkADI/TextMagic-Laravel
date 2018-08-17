@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "CloudLinkADI\\TextMagic\\": "src/"
+      "CloudLink\\TextMagic\\": "src/"
     }
   },
   "extra": {
