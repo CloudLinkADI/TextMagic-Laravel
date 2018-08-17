@@ -1,4 +1,4 @@
-<p align="center"><img src="https://cdn.cloud.link/img/cl-logo.png" alt="CloudLink" width="361.6" height="64"></p>
+<p align="center"><a href="https://cloud.link"><img src="https://cdn.cloud.link/img/cl-logo.png" alt="CloudLink" width="361.6" height="64"></a></p>
 
 <p align="center">
   
