@@ -30,7 +30,7 @@ The PHP wrapper has the following requirements:
 You can install the package via composer:
 
 ```
-composer require cloudlinkadi/textmagic-laravel
+composer require cloudlink/textmagic-laravel
 ```
 
 ## Registering the Application
@@ -40,14 +40,14 @@ After you have installed package, open your Laravel config file config/app.php a
 In the $providers array add the service providers for this package.
 
 ``` php
-CloudLinkADI\TextMagic\TextMagicServiceProvider::class
+CloudLink\TextMagic\TextMagicServiceProvider::class
 ```
 
 Add the facade of this package to the $aliases array.
 
 ``` php
   
-'TextMagic' => CloudLinkADI\TextMagic\TextMagic::class
+'TextMagic' => CloudLink\TextMagic\TextMagic::class
 ```
 
 **Laravel >= 5.5**</br>
@@ -60,7 +60,7 @@ As you're using Laravel 5.5+ the TextMagicServiceProvider & TextMagic Facade wil
 Run artisan vendor:publish command to publish the config file 
  
 ```
-$ php artisan vendor:publish --provider="CloudLinkADI\TextMagic\TextMagicServiceProvider" --tag=config
+$ php artisan vendor:publish --provider="CloudLink\TextMagic\TextMagicServiceProvider" --tag=config
 ```
 
 Set the config values for username and api-key either by editing the config file, or by setting the TEXTMAGIC_USERNAME and TEXTMAGIC_API_KEY variables in your .env file.

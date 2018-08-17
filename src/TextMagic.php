@@ -1,6 +1,6 @@
 <?php
 
-namespace CloudLinkADI\TextMagic;
+namespace CloudLink\TextMagic;
 
 use Textmagic\Services\TextmagicRestClient;
 
@@ -55,7 +55,7 @@ class TextMagic extends TextmagicRestClient
 
         // Now try the CloudLink service models
         if (! isset($this->$name)) {
-            $className = '\\CloudLinkADI\\TextMagic\\Services\\Models\\'.ucfirst($name);
+            $className = '\\CloudLink\\TextMagic\\Services\\Models\\'.ucfirst($name);
 
             if (class_exists($className)) {
                 $this->$name = new $className($this);

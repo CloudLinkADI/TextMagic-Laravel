@@ -1,11 +1,11 @@
 <?php
 
-namespace CloudLinkADI\TextMagic;
+namespace CloudLink\TextMagic;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \CloudLinkADI\TextMagic\TextMagic
+ * @see \CloudLink\TextMagic\TextMagic
  */
 class TextMagicFacade extends Facade
 {

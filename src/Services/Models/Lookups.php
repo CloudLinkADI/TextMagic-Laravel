@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace CloudLinkADI\TextMagic\Services\Models;
+namespace CloudLink\TextMagic\Services\Models;
 
 /**
  * @author Andrew Coghlan
