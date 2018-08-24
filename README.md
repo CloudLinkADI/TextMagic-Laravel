@@ -2,14 +2,14 @@
 
 <p align="center">
   
-<a href="https://packagist.org/packages/cloudlinkadi/textmagic-laravel">
-  <img alt="Latest Stable Version" src="https://poser.pugx.org/cloudlinkadi/textmagic-laravel/v/stable">
+<a href="https://packagist.org/packages/cloudlink/textmagic-laravel">
+  <img alt="Latest Stable Version" src="https://poser.pugx.org/cloudlink/textmagic-laravel/v/stable">
 </a>
-<a href="https://packagist.org/packages/cloudlinkadi/textmagic-laravel">
-  <img alt="Total Downloads" src="https://poser.pugx.org/cloudlinkadi/textmagic-laravel/downloads">
+<a href="https://packagist.org/packages/cloudlink/textmagic-laravel">
+  <img alt="Total Downloads" src="https://poser.pugx.org/cloudlink/textmagic-laravel/downloads">
 </a>
-<a href="https://packagist.org/packages/cloudlinkadi/textmagic-laravel">
-  <img alt="License" src="https://poser.pugx.org/cloudlinkadi/textmagic-laravel/license">
+<a href="https://packagist.org/packages/cloudlink/textmagic-laravel">
+  <img alt="License" src="https://poser.pugx.org/cloudlink/textmagic-laravel/license">
 </a>
 <a href="https://github.styleci.io/repos/7548986/shield">
   <img style="max-width:100%;" alt="StyleCI" src="https://github.styleci.io/repos/7548986/shield">
